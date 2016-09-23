@@ -1,0 +1,10 @@
+/AbstractEntity.class
+/PersistentEntity.class
+/Project.class
+/Sprint.class
+/SprintNameUniquenessConstraint.class
+/SprintNameUniquenessConstraintValidator.class
+/Story.class
+/Task.class
+/TaskStatus.class
+/UploadedFile.class
