@@ -64,7 +64,7 @@
 	font-weight: 300;
 }
 #myCalculator main p::after {
-	content: ' w';
+	content: 'w';
 }
 #myCalculator main p + p::before {
 	content: '$';
