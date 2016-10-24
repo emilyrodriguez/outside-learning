@@ -47,3 +47,37 @@ function cc(card) {
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+// reverse string using built-in methods
+function reverseString(str) {
+  var splitString = str.split("");
+  var reversed = splitString.reverse();
+  var joined = reversed.join("");
+    
+  return joined;
+}
+
+reverseString("Greetings from Earth");
+
+// Reverse a String With a Decrementing For Loop
+
+function reverseString(str) {
+    var newString = "";
+
+    for (var i = str.length - 1; i >= 0; i--) { 
+        newString += str[i];
+    }
+    return newString;
+}
+ 
+reverseString('hello');
+
+// Factorialize a Number
+function factorialize(num) {
+  if (num === 0) {
+    return 1;
+  } 
+  return num * factorialize(num - 1);
+}
+
+factorialize(5);
