@@ -81,3 +81,48 @@ function factorialize(num) {
 }
 
 factorialize(5);
+
+// Palindrome Checker
+function palindrome(str) {
+ var removal = /[^A-Za-z0-9]/g; /*remove non-alphanumeric characters*/
+ str = str.toLowerCase().replace(removal, '')/* turn to lowercase to search*/;
+ var newStr = str.length;
+ for (var i = 0; i < newStr/2; i++) { /*loop continues if characters match in each iteration. if not, return false*/
+   if (str[i] !== str[newStr - 1 - i]) {
+       return false;
+   }
+ }
+ return true;
+}
+
+palindrome("almostomla");
+
+// find the longest word in a sentence
+
+function findLongestWord(str) {
+  var splitStr = str.split(" "); /*split into array*/
+  var longWord = 0; /*holds length of longest word*/
+  
+  for (var i = 0; i < splitStr.length; i++) {
+    if (splitStr[i].length > longWord) {
+       longWord = splitStr[i].length;
+    }
+    // If splitStr[i].length is greater than the word it is compared with longWord takes this new value
+    
+  }
+  return longWord;
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
+
+// title case
+function titleCase(str) {
+  str = str.toLowerCase().split(" ");
+  
+  for (var i = 0; i < str.length; i++) {
+   str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+  }
+  return str.join(" ");
+}
+
+titleCase("I'm a little tea pot");
