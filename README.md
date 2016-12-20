@@ -1,1 +1,1 @@
-This repo contains outside study of Java, Ruby on Rails and Python, which are not taught in Codeup. 
+This repo contains outside study of Java, Ruby on Rails and Python, Angular 2 and React, which are not taught in Codeup. 
