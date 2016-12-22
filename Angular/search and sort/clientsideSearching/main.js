@@ -1,6 +1,7 @@
 var app = angular.module('codecraft', []);
 app.controller('PersonsController', function ($scope) { 
 
+	$scope.search = {};
 	$scope.selectedIndex = null;
 	$scope.selectedPerson = null;
 
@@ -8,6 +9,7 @@ app.controller('PersonsController', function ($scope) {
 		$scope.selectedIndex = index;
 		$scope.selectedPerson = person;
 	};
+
 	$scope.persons = [
 			{
 				"name": "Gregory Huffman",
